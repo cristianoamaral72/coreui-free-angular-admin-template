@@ -9,18 +9,20 @@ import {
 } from '@angular/core';
 import { getStyle } from '@coreui/utils';
 import { ChartjsComponent } from '@coreui/angular-chartjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-widgets-dropdown',
   templateUrl: './widgets-dropdown.component.html',
   styleUrls: ['./widgets-dropdown.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.Default,
 })
 export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
 
   constructor(
+    private router: Router,
     private changeDetectorRef: ChangeDetectorRef
-  ) {}
+  ) { }
 
   data: any[] = [];
   options: any[] = [];
@@ -42,6 +44,9 @@ export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
     'March',
     'April'
   ];
+
+
+
   datasets = [
     [{
       label: 'My First dataset',
@@ -168,6 +173,10 @@ export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
       }
     }
   }
+
+  buscarIntegravel() {
+    this.router.navigate(['intregavel']);
+  }
 }
 
 @Component({
@@ -176,7 +185,7 @@ export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
 })
 export class ChartSample implements AfterViewInit {
 
-  constructor() {}
+  constructor() { }
 
   @ViewChild('chart') chartComponent!: ChartjsComponent;
 

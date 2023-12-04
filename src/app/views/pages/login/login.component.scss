@@ -1,0 +1,53 @@
+/* Estilo para o card */
+.card {
+    background-color: #000000; /* Cor de fundo azul primÃ¡rio */
+    color: white;
+    padding: 20px; /* EspaÃ§amento interno de 20px */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para o card */
+    margin: 10px; /* Margem externa */
+  }
+  
+  .card-body {
+    text-align: center; /* Centraliza o conteÃºdo do corpo do card */
+  }
+  
+  /* Estilo para a imagem dentro do card */
+  .card img {
+    width: 100%; /* Ajusta a largura da imagem para se adaptar ao card */
+    height: auto; /* MantÃ©m a proporÃ§Ã£o da imagem */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+  }
+  
+  /* Media query para telas menores (ex: smartphones) */
+  @media (max-width: 600px) {
+    .card {
+      padding: 10px; /* Reduz o espaÃ§amento interno para telas menores */
+    }
+  }
+  
+  .btn:hover {
+    color: rgb(0 0 0);
+    background-color: #d7be82;
+    border-color: #ad7a2f;
+}
+
+.btn-primary {
+  --cui-btn-color: rgba(255, 255, 255, 0.87);
+  --cui-btn-bg: #91734d;
+  --cui-btn-border-color: #c2a94d;
+  --cui-btn-hover-color: rgba(255, 255, 255, 0.87);
+  margin-left: -32px;
+}
+
+.bg-primary {
+  background-color: #535353;
+
+}
+.bg-bloco{
+  background-color: #535353;
+}
+.text-medium-emphasis {
+  --cui-text-opacity: 1;
+  color: rgb(205 205 205 / 68%) !important;
+}

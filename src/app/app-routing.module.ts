@@ -6,6 +6,7 @@ import { Page404Component } from './views/pages/page404/page404.component';
 import { Page500Component } from './views/pages/page500/page500.component';
 import { LoginComponent } from './views/pages/login/login.component';
 import { RegisterComponent } from './views/pages/register/register.component';
+import { IntregavelComponent } from './views/pages/intregavel/intregavel.component';
 
 const routes: Routes = [
   {
@@ -100,7 +101,14 @@ const routes: Routes = [
       title: 'Register Page'
     }
   },
-  {path: '**', redirectTo: 'dashboard'}
+  {
+    path: 'intregavel',
+    component: IntregavelComponent,
+    data: {
+      title: 'Intregavel Page'
+    }
+  },
+  {path: '**', redirectTo: 'login'}
 ];
 
 @NgModule({

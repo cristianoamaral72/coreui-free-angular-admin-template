@@ -1,3 +1,4 @@
+import { IntregavelComponent } from './intregavel/intregavel.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Page404Component } from './page404/page404.component';
@@ -33,7 +34,14 @@ const routes: Routes = [
     data: {
       title: 'Register Page'
     }
-  }
+  },
+  {
+    path: 'intregavel',
+    component: IntregavelComponent,
+    data: {
+      title: 'Intregavel Page'
+    }
+  },
 ];
 
 @NgModule({

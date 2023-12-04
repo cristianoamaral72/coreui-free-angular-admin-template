@@ -1,0 +1,30 @@
+.bg-primary1 {
+    --cui-bg-opacity: 1;
+    background-color: black;
+  }
+  .bg-primary2 {
+    --cui-bg-opacity: 1;
+    background-color: green;
+  }
+
+  .suporte-lass {
+    --cui-bg-opacity: 1;
+    background-color: green;
+}
+  button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+    background-color: black;
+}
+
+
+.suporte {
+    margin-top: 4px;
+    margin-bottom: 38px;
+    
+}
+
+.botao{
+
+    margin-top: -20px;
+    margin-bottom: 38px;
+}
