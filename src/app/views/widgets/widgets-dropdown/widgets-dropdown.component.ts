@@ -1,3 +1,4 @@
+import { CoreUIIconsComponent } from './../../icons/coreui-icons.component';
 import {
   AfterContentInit,
   AfterViewInit,
@@ -16,6 +17,7 @@ import { Router } from '@angular/router';
   templateUrl: './widgets-dropdown.component.html',
   styleUrls: ['./widgets-dropdown.component.scss'],
   changeDetection: ChangeDetectionStrategy.Default,
+  
 })
 export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
 

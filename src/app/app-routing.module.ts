@@ -6,7 +6,7 @@ import { Page404Component } from './views/pages/page404/page404.component';
 import { Page500Component } from './views/pages/page500/page500.component';
 import { LoginComponent } from './views/pages/login/login.component';
 import { RegisterComponent } from './views/pages/register/register.component';
-import { IntregavelComponent } from './views/pages/intregavel/intregavel.component';
+import { IntregavelComponent } from './views/theme/intregavel.component';
 
 const routes: Routes = [
   {

@@ -1,0 +1,10 @@
+:host ::ng-deep .accordion-custom {
+    .accordion-button {
+      background-color: black;
+      color: var(--cui-white);
+    }
+  }
+  .bg-primary {
+    --cui-bg-opacity: 1;
+    background-color: black;
+  }
